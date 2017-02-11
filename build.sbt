@@ -11,3 +11,7 @@ initialCommands in console := """
   |import doodle.backend.StandardInterpreter._
   |import doodle.examples._
 """.trim.stripMargin
+
+cleanupCommands in console := """
+  |doodle.jvm.quit()
+""".trim.stripMargin
